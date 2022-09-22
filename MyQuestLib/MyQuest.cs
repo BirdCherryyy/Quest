@@ -1,13 +1,12 @@
 ﻿namespace QUEST.MyQuestLib;
 public class MyQuest
 {
-    string[,] Quests;
-    public MyQuest()
+    public string[] Quests;
+    public string[] Answers;
+    public MyQuest()//правильный ответ из массива ответов будет соотвестовать индексу в массиве вопросов 
     {
-        Quests = new string[4,2] {{ "Кто чирикает?","Воробей"},{"Кто лает?","Собака"},{"Кто чирикает?","Воробей"},{"Кто хрюкает?","Свинья"}};
-       //Quests.add(new string[,] {{ "Кто чирикает?"},{"Воробей"}});
-       //Quests.add(new string[,] {{ "Кто лает?"},{"Собака"}});
-       //Quests.add(new string[,] {{ "Кто хрюкает?"},{"Свинья"}});
+        Quests = new string[] {"Кто чирикает?", "Кто лает?", "Кто каркает?", "Кто хрюкает?", "Кто обитает под землей?", "Полосатая кошка - это..."};
+        Answers = new string[] {"Воробей", "Собака", "Ворона", "Свинья", "Крот", "Тигр"};
     }
 
    // public void Add(string quest, string answer){

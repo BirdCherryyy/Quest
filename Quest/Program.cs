@@ -6,9 +6,9 @@ namespace QUEST.Quest;
 internal class Program
 {
     private static void Main(string[] args)
-    {
+    {   
         MyQuest myquest = new MyQuest();
         GenQuests genquests = new GenQuests();
-        Console.WriteLine("here is a program");
+        genquests.GenOneQuest(myquest.Quests, myquest.Answers);
     }
 }
